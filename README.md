@@ -1,12 +1,63 @@
-# React + Vite
+# 📝 Gestión de Tareas - Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación de gestión de tareas desarrollada con **React**, **Vite** y **Tailwind CSS**. Permite crear, editar, completar, eliminar y filtrar tareas, con persistencia de datos mediante `localStorage`.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [UUID](https://www.npmjs.com/package/uuid) para generación de IDs únicos
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🎯 Funcionalidades
+
+- ✅ Añadir nuevas tareas con título y descripción  
+- ✅ Editar tareas existentes  
+- ✅ Eliminar tareas  
+- ✅ Marcar tareas como completadas  
+- ✅ Filtrar tareas por estado: Todas, Activas, Completadas  
+- ✅ Mostrar contador de tareas pendientes  
+- ✅ Guardar tareas en `localStorage` para mantener datos al recargar  
+- ✅ Interfaz amigable, responsive y estilizada con Tailwind CSS  
+
+---
+
+## 📁 Estructura del proyecto
+
+/src 
+    /components 
+        /TaskForm 
+            TaskForm.jsx 
+        /TaskList 
+            TaskList.jsx 
+        /TaskItem 
+            TaskItem.jsx 
+        /TaskFilter 
+            TaskFilter.jsx 
+        /TaskStats 
+            TaskStats.jsx 
+    App.jsx 
+    main.jsx 
+    index.css
+
+
+---
+
+## ⚙️ Instalación y ejecución
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/fmaovs/gestion-tareas.git
+
+2. Instala dependencias:
+    npm install
+
+3. Inicia la aplicación:
+    npm run dev
+
+4. Accede en tu navegador a:
+    http://localhost:5173
